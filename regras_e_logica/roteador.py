@@ -45,6 +45,7 @@ class Roteador:  # Define a classe Roteador para encapsular as regras de cálcul
                     
         return None, [], []  # Caso a fila esvazie sem encontrar o destino, retorna valores padrão representando erro/sem rota.
 
+
     def alternar_linha(self, linha):  # Método responsável por ativar ou desativar uma linha de ônibus.
         if linha in self.linhas_desativadas:  # Se a linha de ônibus já estiver listada no conjunto de desativadas:
             self.linhas_desativadas.remove(linha)  # Remove a linha do conjunto, reativando-a para futuros cálculos de rotas.

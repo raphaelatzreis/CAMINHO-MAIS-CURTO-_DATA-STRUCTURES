@@ -318,5 +318,6 @@ class InterfaceEPT:  # Define a classe InterfaceEPT para gerenciar e renderizar 
 
 
 
+
     def iniciar(self):  # Método simples de ativação da interface gráfica.
         plt.show()  # Exibe a janela gráfica Matplotlib construída na tela e inicia o loop de eventos padrão.

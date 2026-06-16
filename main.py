@@ -9,6 +9,7 @@ from regras_e_logica.roteador import Roteador
 # Importa a classe InterfaceEPT que cria e gerencia os componentes da interface visual da EPT.
 from ui_interface_usuario.interface import InterfaceEPT  
 
+
 def main():
     # Cria uma instância da classe Grafo para carregar os bairros, conexões e linhas de ônibus ativos.
     meu_grafo = Grafo()  

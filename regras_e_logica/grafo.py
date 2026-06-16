@@ -137,3 +137,4 @@ class Grafo:  # Define a classe Grafo para modelar os bairros, as rotas e as con
                 for opcao in self.dados[u][v]:  # Itera sobre cada ônibus/conexão disponível entre u e v.
                     linhas.add(opcao["linha"])  # Adiciona a linha de ônibus ao conjunto.
         return linhas  # Retorna o conjunto completo de todas as linhas únicas do sistema.
+    

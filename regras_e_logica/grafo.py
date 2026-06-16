@@ -1,46 +1,48 @@
 # grafo.py
 class Grafo:
     def __init__(self):
-        # Dados estruturados do sistema EPT
+        # Malha viária expandida para criar múltiplas rotas de caminho mais curto
         self.dados = {
-            "Terminal Centro": {
-                "Ponta Negra": {"tempo": 50, "linha": "E01"},
-                "São José": {"tempo": 20, "linha": "E24"},
-                "Araçatiba": {"tempo": 15, "linha": "E05"},
-                "Retiro": {"tempo": 25, "linha": "E15"},
-                "Jacaroá": {"tempo": 20, "linha": "E08"},
-                "Guaratiba": {"tempo": 30, "linha": "E09"},
-                "Espraiado": {"tempo": 45, "linha": "E14"}
+            "Flamengo": {
+                "Maricá": {"tempo": 7, "linha": "E30 / E24"},
+                "Parque Nanci": {"tempo": 15, "linha": "Interbairros"}
             },
-            "Ponta Negra": {
-                "Terminal Centro": {"tempo": 50, "linha": "E01"},
-                "Cordeirinho": {"tempo": 20, "linha": "E02"},
-                "Jaconé": {"tempo": 15, "linha": "E01A"}
+            "Maricá": {
+                "Flamengo": {"tempo": 7, "linha": "E30 / E24"},
+                "Parque Nanci": {"tempo": 12, "linha": "E30"},
+                "São José": {"tempo": 15, "linha": "Expresso / E24"},
+                "Inoã": {"tempo": 35, "linha": "E11"}
+            },
+            "Parque Nanci": {
+                "Maricá": {"tempo": 12, "linha": "E30"},
+                "Flamengo": {"tempo": 15, "linha": "Interbairros"},
+                "São José": {"tempo": 15, "linha": "E30"},
+                "Itaipuaçu": {"tempo": 35, "linha": "E32"}
             },
             "São José": {
-                "Terminal Centro": {"tempo": 20, "linha": "E24"},
-                "Inoã": {"tempo": 20, "linha": "E24"}
+                "Maricá": {"tempo": 15, "linha": "Expresso / E24"},
+                "Parque Nanci": {"tempo": 15, "linha": "E30"},
+                "Inoã": {"tempo": 14, "linha": "E30"},
+                "Recanto": {"tempo": 20, "linha": "Expresso"},
+                "Itaipuaçu": {"tempo": 25, "linha": "E20"}
             },
             "Inoã": {
-                "São José": {"tempo": 20, "linha": "E24"},
-                "Itaipuaçu": {"tempo": 30, "linha": "E26"},
-                "Maricá": {"tempo": 35, "linha": "E11"}
+                "Maricá": {"tempo": 35, "linha": "E11"},
+                "São José": {"tempo": 14, "linha": "E30"},
+                "Itaipuaçu": {"tempo": 12, "linha": "E30"},
+                "Recanto": {"tempo": 25, "linha": "E21"}
             },
             "Itaipuaçu": {
-                "Inoã": {"tempo": 30, "linha": "E26"},
-                "Recanto": {"tempo": 15, "linha": "E30"},
-                "Cajueiros": {"tempo": 20, "linha": "E32"}
+                "Inoã": {"tempo": 12, "linha": "E30"},
+                "São José": {"tempo": 25, "linha": "E20"},
+                "Parque Nanci": {"tempo": 35, "linha": "E32"},
+                "Recanto": {"tempo": 20, "linha": "E30"}
             },
-            "Cordeirinho": {"Ponta Negra": {"tempo": 20, "linha": "E02"}},
-            "Recanto": {"Itaipuaçu": {"tempo": 15, "linha": "E30"}},
-            "Araçatiba": {"Terminal Centro": {"tempo": 15, "linha": "E05"}},
-            "Maricá": {"Inoã": {"tempo": 35, "linha": "E11"}},
-            "Retiro": {"Terminal Centro": {"tempo": 25, "linha": "E15"}},
-            "Jacaroá": {"Terminal Centro": {"tempo": 20, "linha": "E08"}},
-            "Guaratiba": {"Terminal Centro": {"tempo": 30, "linha": "E09"}},
-            "Espraiado": {"Terminal Centro": {"tempo": 45, "linha": "E14"}},
-            "Cajueiros": {"Itaipuaçu": {"tempo": 20, "linha": "E32"}},
-            "Jaconé": {"Ponta Negra": {"tempo": 15, "linha": "E01A"}}
+            "Recanto": {
+                "Itaipuaçu": {"tempo": 20, "linha": "E30"},
+                "Inoã": {"tempo": 25, "linha": "E21"},
+                "São José": {"tempo": 20, "linha": "Expresso"}
+            }
         }
 
     def obter_todas_linhas(self):

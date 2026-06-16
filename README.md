@@ -152,9 +152,13 @@ Aplicações desse algoritmo podem ser encontradas em sistemas de navegação GP
 ## Autores
 
 Raphaela Zille
+
 Marcos Gabriel Sales Pires
+
 Ravi Carlos Diano
+
 Matheus Duarte 
+
 
 Estudantes de Engenharia de Software
 

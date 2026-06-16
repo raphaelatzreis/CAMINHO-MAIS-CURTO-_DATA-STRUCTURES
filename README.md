@@ -39,6 +39,7 @@ Além disso, é possível simular a indisponibilidade de determinadas linhas, pe
 ### Programação
 
 * Programação Orientada a Objetos
+* Princípios SOLID (SRP, OCP, LSP, ISP, DIP)
 * Injeção de Dependência
 * Separação de Responsabilidades
 
@@ -77,21 +78,14 @@ Responsável pela interface gráfica, entrada de dados do usuário e visualizaç
 
 A simulação contempla os seguintes pontos da cidade de Maricá:
 
-* Terminal Centro
+* Maricá
+* Avenida
+* Flamengo
+* Parque Nanci
+* São José
 * Inoã
 * Itaipuaçu
-* São José
-* Araçatiba
-* Jacaroá
-* Retiro
-* Espraiado
-* Guaratiba
-* Maricá
-* Ponta Negra
-* Jaconé
-* Cordeirinho
 * Recanto
-* Cajueiros
 
 ## Tecnologias Utilizadas
 

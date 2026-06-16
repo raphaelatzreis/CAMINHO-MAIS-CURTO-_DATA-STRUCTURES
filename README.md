@@ -99,13 +99,13 @@ A simulação contempla os seguintes pontos da cidade de Maricá:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/raphaelatzreis/CAMINHO-MAIS-CURTO-_DATA-STRUCTURES.git
+git clone https://github.com/raphaelatzreis/EPT-MARICA-ROTAS_DATA-STRUCTURES.git
 ```
 
 Acesse a pasta do projeto:
 
 ```bash
-cd CAMINHO-MAIS-CURTO-_DATA-STRUCTURES
+cd EPT-MARICA-ROTAS_DATA-STRUCTURES
 ```
 
 Instale as dependências:
